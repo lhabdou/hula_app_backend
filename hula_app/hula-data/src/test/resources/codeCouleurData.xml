@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset>
+	
+	<CODES_COULEURS
+	code_couleur="VER"
+	libelle="Vert"
+	descriptif="La couleur verte"
+	/>
+	
+	<CODES_COULEURS
+	code_couleur="JAU"
+	libelle="Jaune"
+	/>
+	
+	<CODES_COULEURS
+	code_couleur="ORA"
+	libelle="Orange"
+	/>
+		
+	<CODES_COULEURS
+	code_couleur="ROS"
+	libelle="Rose"
+	/>
+	
+	<CODES_COULEURS
+	code_couleur="ROU"
+	libelle="Rouge"
+	/>
+
+	
+	
+</dataset>

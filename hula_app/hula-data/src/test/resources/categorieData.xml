@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset>
+
+	<CATEGORIES
+	id_categorie ="1"
+	nom="Aliments"
+	descriptif="Regroupant plusieurs aliments"
+	/>
+	
+	<CATEGORIES
+	id_categorie ="2"
+	nom="Boissons"
+	descriptif="Regroupant plusieurs boissons"
+	/>
+</dataset>

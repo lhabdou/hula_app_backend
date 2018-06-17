@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset>
+
+	<ADDITIFS
+	 code_additif="E500" nom_additif="ChloroTest"
+		descriptif="non nocif d'origine vegetal"/>
+
+
+		<ADDITIFS
+		 code_additif="E504" nom_additif="ChloroTest2"
+			descriptif="non nocif d'origine animal"/>
+
+
+</dataset>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset>
+
+	<CATEGORIES
+	id_categorie ="1"
+	nom="Aliments"
+	descriptif="Regroupant plusieurs aliments"
+	/>
+	
+	<CODES_COULEURS
+	code_couleur="VER"
+	libelle="Vert"
+	descriptif="La couleur verte"
+	/>
+
+	<PRODUITS
+	code_ean="3088545004001"
+	nom="Miel"
+	code_couleur="VER"
+	id_categorie="1"
+	descriptif="Produit très sucré et très bon ayant des bienfaits naturels"/>
+	
+</dataset>
