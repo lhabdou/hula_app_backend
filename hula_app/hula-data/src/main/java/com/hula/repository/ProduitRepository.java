@@ -14,7 +14,6 @@ public interface ProduitRepository extends JpaRepository<ProduitEntite, String> 
 	 * @return
 	 */
 	@Query("select p from ProduitEntite p "
-			+ "inner join fetch p.categorie c "
 			+ "left join fetch p.codeCouleur cc "
 			+ "where p.codeEan = :code")
 	ProduitEntite getProduit(@Param("code") String code);

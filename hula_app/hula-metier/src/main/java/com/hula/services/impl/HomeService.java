@@ -3,6 +3,8 @@
  */
 package com.hula.services.impl;
 
+import javax.transaction.Transactional;
+
 import org.springframework.stereotype.Service;
 
 import com.hula.services.IHomeService;
@@ -12,6 +14,7 @@ import com.hula.services.IHomeService;
  *
  */
 @Service
+@Transactional
 public class HomeService implements IHomeService {
 
 	/* (non-Javadoc)

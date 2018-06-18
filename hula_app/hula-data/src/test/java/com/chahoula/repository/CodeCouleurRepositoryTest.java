@@ -32,11 +32,11 @@ import com.hula.repository.CodeCouleurRepository;
 public class CodeCouleurRepositoryTest {
 
 	@Autowired
-	private CodeCouleurRepository codesCouleursRepository;
+	private CodeCouleurRepository codeCouleurRepository;
 
 	@Test
-	public void testGetProduit() {
-		List<CodeCouleursEntite> listeCodeCouleurs = codesCouleursRepository.findAll();
+	public void testGetCouleurs() {
+		List<CodeCouleursEntite> listeCodeCouleurs = codeCouleurRepository.findAll();
 		assertNotNull(listeCodeCouleurs);
 		assertTrue(listeCodeCouleurs.size()==5);
 	}

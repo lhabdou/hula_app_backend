@@ -5,6 +5,8 @@ package com.hula.services.impl;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +21,7 @@ import com.hula.services.ICodeCouleurService;
  *
  */
 @Service
+@Transactional
 public class CodeCouleurService implements ICodeCouleurService {
 
 	@Autowired

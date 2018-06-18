@@ -45,7 +45,7 @@ public class TomcatEmbeddedConfig {
 				resource.setType(DataSource.class.getName());
 				resource.setProperty("driverClassName", "org.postgresql.Driver");
 				resource.setProperty("url", "jdbc:postgresql://localhost:5432/chahoula");
-				resource.setProperty("user", "chahoula");
+				resource.setProperty("user", "asoilihi");
 				resource.setProperty("password", "chahoula");
 
 				context.getNamingResources().addResource(resource);

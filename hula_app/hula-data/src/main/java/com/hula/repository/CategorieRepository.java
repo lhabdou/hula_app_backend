@@ -9,7 +9,7 @@ import com.hula.entities.CategorieEntite;
 public interface CategorieRepository extends JpaRepository<CategorieEntite, Long> {
 	
 	@Query("select c from CategorieEntite c "
-			+ "inner join c.produits "
+			+ "left join fetch c.produits "
 			+ "where c.idCategorie = :id")
 	CategorieEntite getCategorieWithId(@Param("id") Long id);
 

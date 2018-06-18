@@ -3,6 +3,8 @@
  */
 package com.hula.services.impl;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,7 @@ import com.hula.services.IProduitService;
  *
  */
 @Service
+@Transactional
 public class ProduitService implements IProduitService {
 
 	@Autowired

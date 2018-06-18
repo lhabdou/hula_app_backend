@@ -4,14 +4,13 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 @Entity
 @Table(name="PRODUITS")
-public class ProduitEntite implements Serializable {
+public class ProduitEntite implements Serializable {	
 
 	/**
 	 * Numero de sérialisation
@@ -40,14 +39,14 @@ public class ProduitEntite implements Serializable {
 	/**
 	 * Le code couleur
 	 */
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne
 	@JoinColumn(name="code_couleur")
 	private CodeCouleursEntite codeCouleur;
 	
 	/**
 	 * La catégorie
 	 */
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne
 	@JoinColumn(name="id_categorie")
 	private CategorieEntite categorie;
 
