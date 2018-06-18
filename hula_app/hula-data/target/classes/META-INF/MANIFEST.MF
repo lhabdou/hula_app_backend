@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: hula-data
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: Slhabdou
+Built-By: asoilihi
 Implementation-Vendor-Id: com.hula
-Build-Jdk: 1.8.0_171
+Build-Jdk: 1.8.0_144
 Implementation-URL: http://projects.spring.io/spring-boot/hula_app/hul
  a-data/
 Created-By: Maven Integration for Eclipse

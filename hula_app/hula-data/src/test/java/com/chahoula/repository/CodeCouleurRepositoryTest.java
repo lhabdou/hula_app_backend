@@ -27,8 +27,8 @@ import com.hula.repository.CodeCouleurRepository;
 @ContextConfiguration(classes = { PersistenceConfigTest.class })
 @TestExecutionListeners({ DependencyInjectionTestExecutionListener.class, DirtiesContextTestExecutionListener.class,
 		TransactionalTestExecutionListener.class, DbUnitTestExecutionListener.class })
-@DatabaseSetup(value = "classpath:codesCouleursData.xml", type = DatabaseOperation.CLEAN_INSERT, connection = "dbUnitDatabaseConnection")
-@DatabaseTearDown(value = "classpath:codesCouleursData.xml", type = DatabaseOperation.DELETE_ALL)
+@DatabaseSetup(value = "classpath:codeCouleurData.xml", type = DatabaseOperation.CLEAN_INSERT, connection = "dbUnitDatabaseConnection")
+@DatabaseTearDown(value = "classpath:codeCouleurData.xml", type = DatabaseOperation.DELETE_ALL)
 public class CodeCouleurRepositoryTest {
 
 	@Autowired

@@ -9,7 +9,7 @@
 	/>
 	
 	<CODES_COULEURS
-	code_couleur="VER"
+	code_couleur="A"
 	libelle="Vert"
 	descriptif="La couleur verte"
 	/>
@@ -17,7 +17,7 @@
 	<PRODUITS
 	code_ean="3088545004001"
 	nom="Miel"
-	code_couleur="VER"
+	code_couleur="A"
 	id_categorie="1"
 	descriptif="Produit très sucré et très bon ayant des bienfaits naturels"/>
 	

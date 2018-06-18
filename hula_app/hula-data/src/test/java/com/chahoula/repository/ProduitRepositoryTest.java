@@ -27,8 +27,8 @@ import com.hula.repository.ProduitRepository;
 @ContextConfiguration(classes = { PersistenceConfigTest.class })
 @TestExecutionListeners({ DependencyInjectionTestExecutionListener.class, DirtiesContextTestExecutionListener.class,
 		TransactionalTestExecutionListener.class, DbUnitTestExecutionListener.class })
-@DatabaseSetup(value = "classpath:produitsData.xml", type = DatabaseOperation.CLEAN_INSERT, connection = "dbUnitDatabaseConnection")
-@DatabaseTearDown(value = "classpath:produitsData.xml", type = DatabaseOperation.DELETE_ALL)
+@DatabaseSetup(value = "classpath:produitData.xml", type = DatabaseOperation.CLEAN_INSERT, connection = "dbUnitDatabaseConnection")
+@DatabaseTearDown(value = "classpath:produitData.xml", type = DatabaseOperation.DELETE_ALL)
 public class ProduitRepositoryTest {
 
 	@Autowired
@@ -48,6 +48,6 @@ public class ProduitRepositoryTest {
 		assertNotNull(codeCouleur);
 
 		assertEquals("3088545004001", produitEntite.getCodeEan());
-		assertEquals("VER", codeCouleur.getCodeCouleur());
+		assertEquals("A", codeCouleur.getCodeCouleur());
 	}
 }

@@ -3,28 +3,28 @@
 <dataset>
 	
 	<CODES_COULEURS
-	code_couleur="VER"
-	libelle="Vert"
+	code_couleur="A"
+	libelle="Vert foncé"
 	descriptif="La couleur verte"
 	/>
 	
 	<CODES_COULEURS
-	code_couleur="JAU"
-	libelle="Jaune"
+	code_couleur="B"
+	libelle="Vert clair"
 	/>
 	
 	<CODES_COULEURS
-	code_couleur="ORA"
-	libelle="Orange"
+	code_couleur="C"
+	libelle="Jaune"
 	/>
 		
 	<CODES_COULEURS
-	code_couleur="ROS"
-	libelle="Rose"
+	code_couleur="D"
+	libelle="Orange"
 	/>
 	
 	<CODES_COULEURS
-	code_couleur="ROU"
+	code_couleur="E"
 	libelle="Rouge"
 	/>
 

@@ -1,4 +1,3 @@
-﻿
 CREATE TABLE public.PRATIQUES_ALIMENTAIRES (
                 ID_PRATIQUE BIGINT NOT NULL,
                 NOM VARCHAR(100) NOT NULL,
@@ -18,7 +17,7 @@ CREATE TABLE public.CODES_COULEURS (
 CREATE TABLE public.ADDITIFS (
                 CODE_ADDITIF VARCHAR(5) NOT NULL,
                 NOM_ADDITIF VARCHAR(100) NOT NULL,
-                DESCRIPTIF VARCHAR(500),
+                DESCRIPTIF VARCHAR(1000),
                 CONSTRAINT code_additif PRIMARY KEY (CODE_ADDITIF)
 );
 
@@ -38,7 +37,7 @@ CREATE INDEX additifs_pratiques_idx
 CREATE TABLE public.INGREDIENTS (
                 ID_INGREDIENT BIGINT NOT NULL,
                 NOM VARCHAR(100) NOT NULL,
-                DESCRIPTIF VARCHAR(500),
+                DESCRIPTIF VARCHAR(1000),
                 CONSTRAINT id_ingredient PRIMARY KEY (ID_INGREDIENT)
 );
 
@@ -49,7 +48,7 @@ CREATE INDEX ingredients_idx
 
 CREATE TABLE public.PRODUITS (
                 CODE_EAN VARCHAR(13) NOT NULL,
-                NOM VARCHAR(100) NOT NULL,
+                NOM VARCHAR(150) NOT NULL,
                 DESCRIPTIF VARCHAR(1000),
                 CODE_COULEUR VARCHAR(1) NOT NULL,
                 ID_CATEGORIE BIGINT NOT NULL,
