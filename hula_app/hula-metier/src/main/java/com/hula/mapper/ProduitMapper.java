@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.hula.domain.Produit;
-import com.hula.entities.CategorieEntite;
 import com.hula.entities.CodeCouleursEntite;
 import com.hula.entities.ProduitEntite;
 
@@ -57,9 +56,7 @@ public class ProduitMapper {
 			produit = new Produit();
 			produit.setCodeEan(produitEntite.getCodeEan());
 			produit.setNomProduit(produitEntite.getNom());
-			produit.setDescriptifProduit(produitEntite.getDescriptifProduit());
-			CategorieEntite categorieEntite = produitEntite.getCategorie();
-			produit.setCategorie(CategorieMapper.transformerCategorieEntiteEnCategorie(categorieEntite));
+			produit.setDescriptif(produitEntite.getDescriptifProduit());
 			CodeCouleursEntite codeCouleurEntite = produitEntite.getCodeCouleur();
 			produit.setCodeCouleur(CodeCouleurMapper.transformerCodeCouleurEntiteEnCodeCouleur(codeCouleurEntite));
 

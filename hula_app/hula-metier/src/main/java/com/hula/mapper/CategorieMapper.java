@@ -58,7 +58,7 @@ public class CategorieMapper {
 			categorie.setNomCategorie(categorieEntite.getNom());
 			categorie.setDescriptif(categorieEntite.getDescriptifCategorie());
 
-			if (categorieEntite.getProduits() != null && categorieEntite.getProduits().isEmpty()) {
+			if (categorieEntite.getProduits() != null && !categorieEntite.getProduits().isEmpty()) {
 
 				categorie.setProduits(
 						ProduitMapper.transformerListeProduitsEntiteEnListeProduits(categorieEntite.getProduits()));
