@@ -30,7 +30,7 @@ public class CategorieService implements ICategoriesService {
 
 	@Override
 	public List<Categorie> findAllCategories() {
-		List<CategorieEntite> listeCategorie = categorieRepository.findAll();
+		List<CategorieEntite> listeCategorie = categorieRepository.getAllCategories();
 		
 		return CategorieMapper.transformerListeCategoriesEntiteEnListeCatgories(listeCategorie);
 	}

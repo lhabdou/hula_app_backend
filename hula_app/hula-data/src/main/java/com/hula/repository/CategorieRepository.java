@@ -1,5 +1,7 @@
 package com.hula.repository;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -12,5 +14,8 @@ public interface CategorieRepository extends JpaRepository<CategorieEntite, Long
 			+ "left join fetch c.produits "
 			+ "where c.idCategorie = :id")
 	CategorieEntite getCategorieWithId(@Param("id") Long id);
+	
+	@Query("select c from CategorieEntite c ")
+	List<CategorieEntite> getAllCategories();
 
 }

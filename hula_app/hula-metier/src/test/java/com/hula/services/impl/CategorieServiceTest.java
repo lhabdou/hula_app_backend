@@ -87,7 +87,7 @@ public class CategorieServiceTest {
 	@Test
 	public void testFindAllCategories() {
 		
-		Mockito.when(categorieRepository.findAll()).thenReturn(listeCat);
+		Mockito.when(categorieRepository.getAllCategories()).thenReturn(listeCat);
 		PowerMockito.mockStatic(CategorieMapper.class);
 		PowerMockito.when(CategorieMapper.transformerListeCategoriesEntiteEnListeCatgories(Mockito.anyList())).thenReturn(listeResult);
 		
