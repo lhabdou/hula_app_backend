@@ -53,7 +53,7 @@ public class ProduitMapperTest {
 		Produit produit1 = listeProduits.get(0);
 		assertEquals("545451218", produit1.getCodeEan());
 		assertEquals("Biscuit LU", produit1.getNomProduit());
-		assertEquals("très bon", produit1.getDescriptifProduit());
+		assertEquals("très bon", produit1.getDescriptif());
 		
 	}
 	

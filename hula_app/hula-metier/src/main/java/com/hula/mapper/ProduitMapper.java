@@ -56,7 +56,7 @@ public class ProduitMapper {
 			produit = new Produit();
 			produit.setCodeEan(produitEntite.getCodeEan());
 			produit.setNomProduit(produitEntite.getNom());
-			produit.setDescriptifProduit(produitEntite.getDescriptifProduit());
+			produit.setDescriptif(produitEntite.getDescriptifProduit());
 			CodeCouleursEntite codeCouleurEntite = produitEntite.getCodeCouleur();
 			produit.setCodeCouleur(CodeCouleurMapper.transformerCodeCouleurEntiteEnCodeCouleur(codeCouleurEntite));
 

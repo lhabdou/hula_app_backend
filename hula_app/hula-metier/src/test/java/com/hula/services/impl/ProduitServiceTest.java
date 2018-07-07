@@ -56,7 +56,7 @@ public class ProduitServiceTest {
 		produit = new Produit(); 
 		produit.setCodeEan("1121511");
 		produit.setNomProduit("Jus de mangue");
-		produit.setDescriptifProduit("Boisson sucré");
+		produit.setDescriptif("Boisson sucré");
 		
 		listeResult.add(produit);
 

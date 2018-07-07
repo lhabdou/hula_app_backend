@@ -48,7 +48,7 @@ public class ProduitControllerTest {
 		listeCat = new ArrayList<>(); 
 		
 		produit = new Produit();
-		produit.setDescriptifProduit("Oasis Tropical");
+		produit.setDescriptif("Oasis Tropical");
 		produit.setCodeEan("4568565");;
 		produit.setNomProduit("Boisson sucré");
 		listeCat.add(produit );
@@ -65,7 +65,7 @@ public class ProduitControllerTest {
 				.andExpect(content().contentType(TestUtil.APPLICATION_JSON_UTF8))
 			.andExpect(jsonPath("$.codeEan", is(produit.getCodeEan())))
 			.andExpect(jsonPath("$.nomProduit", is(produit.getNomProduit())))
-			.andExpect(jsonPath("$.descriptifProduit", is(produit.getDescriptifProduit())));
+			.andExpect(jsonPath("$.descriptifProduit", is(produit.getDescriptif())));
 	}
 
 }

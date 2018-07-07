@@ -29,7 +29,7 @@ public class Produit implements Serializable {
 	/**
 	 * le descriptif du produit
 	 */
-	private String descriptifProduit; 
+	private String descriptif; 
 	
 	/**
 	 * le code couleur
@@ -79,17 +79,17 @@ public class Produit implements Serializable {
 	 * Met à jour la valeur du champ descriptifProduit 
 	 * avec descriptifProduit
 	 * 
-	 * @param descriptifProduit 
+	 * @param descriptif 
 	 */
-	public String getDescriptifProduit() {
-		return descriptifProduit;
+	public String getDescriptif() {
+		return descriptif;
 	}
 
 	/**
 	 * @param descriptifProduit the descriptifProduit to set
 	 */
-	public void setDescriptifProduit(String descriptifProduit) {
-		this.descriptifProduit = descriptifProduit;
+	public void setDescriptif(String descriptifProduit) {
+		this.descriptif = descriptifProduit;
 	}
 
 	/**
