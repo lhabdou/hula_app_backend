@@ -6,6 +6,7 @@ package com.hula.mapper;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.hula.documents.Produits;
 import com.hula.domain.Categorie;
 import com.hula.entities.CategorieEntite;
 
@@ -66,6 +67,20 @@ public class CategorieMapper {
 		}
 
 		return categorie;
+	}
+
+	public static List<Categorie> transformerListeProduitsEnListeCatgories(List<Produits> produits) {
+		List<Categorie> categories = new ArrayList<>(); 
+		for (Produits produit : produits) {
+			
+			Categorie categorie = new Categorie(); 
+			
+			categorie.setNomCategorie(produit.getCategories());
+			categorie.setIdCategorie(1L);
+			categories.add(categorie);
+			
+		}
+		return categories;
 	}
 
 }

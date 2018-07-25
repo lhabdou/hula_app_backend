@@ -17,7 +17,7 @@ import com.hula.services.ICategoriesService;
 
 @RestController
 @RequestMapping(value="/hula-app", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-@CrossOrigin("*")
+//@CrossOrigin("*")
 public class CategorieController {
 	
 	@Autowired
